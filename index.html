@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Happy Anniversary!</title>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="./stylesheet.css">
+	</head>
+	
+	<body>
+		<!-- Home-->
+		<header class="w3-display-container w3-wide header w3-grayscale-min" id="home">
+			<div class="w3-display-middle w3-text-white w3-center">
+				<h1 class="w3-jumbo">Deepali & Anuj's</h1>
+				<h2>23<sup>rd</sup> Wedding Anniversary</h2>
+				<h2><b>12.11.2022</b></h2>
+			</div>
+		</header>
+		
+		<!-- Navbar -->
+		<div class="w3-bottom w3-hide-small">
+			<div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+				<a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+				<a href="#us" style="width:25%" class="w3-bar-item w3-button">Deepali and Anuj</a>
+				<a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding Memos</a>
+				<a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Send A Message</a>
+			</div>
+		</div>
+		
+		<!-- About -->
+		<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+			<div class="w3-content">
+				<h1 class="w3-center w3-text-grey"><b>Deepali and Anuj</b></h1>
+				<img class="w3-round" src="./assets/cardimg.jpg" style="width:100%;margin:32px 0">
+				<p><i>Happy Anniversary Mom and Dad! In movies there's always talk about the <b><span class="w3-text-yellow">"Golden Standard"</span></b> for couples.
+				We can confidently say, that in the lives we've lived, you are our golden standard. We love you both so much and we all feel so lucky
+				to be part of this family. Here's to 23 years of marriage, and many more of us getting in the middle of your hugs</i> :)</p>
+				<br>
+			</div>
+		</div>
+		
+		<!-- Wedding Video -->
+		<div class="w3-container w3-padding-64 w3-grayscale-min w3-center" id="wedding">
+			<div class="w3-content">
+				<h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
+				<iframe src="https://drive.google.com/file/d/1_pYuGtNxemP0knqa_AasrXkHvWm9voVf/preview" class="w3-round-large" style="width:640px;height:480px;margin:64px 0" allow="autoplay"></iframe>
+				<div class="w3-row">
+					<div class="w3-half">
+						<h2>When</h2>
+						<p>Wedding Ceremony - 2:00pm</p>
+						<p>Reception & Dinner - 5:00pm</p>
+					</div>
+					<div class="w3-half">
+						<h2>Where</h2>
+						<p>Some place, an address</p>
+						<p>Some where, some address</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Send A Message -->
+		<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+			<h1>HOPE YOU CAN MAKE IT!</h1>
+			<p class="w3-xlarge">
+				<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+			</p>
+		</div>
+		
+		<!-- RSVP modal -->
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+				<div class="w3-container w3-white w3-center">
+					<h1 class="w3-wide">CAN YOU COME?</h1>
+					<p>We really hope you can make it.</p>
+					<form>
+						<input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+					</form>
+					<p><i>Sincerely, John & Jane</i></p>
+					<div class="w3-row">
+						<div class="w3-half">
+							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+						</div>
+						<div class="w3-half">
+							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
